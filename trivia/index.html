@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Trivia Game</title>
+  </head>
+
+  <body>
+    <div class="container clearfix">
+      <div class="title">
+        <h1>World Trivia Game</h1>
+      </div>
+      <div class="question" id="question"></div>
+      <div><button class="btn-start">Start</button></div>
+      <div class="choice" id="choice">
+        <label>
+          <input type="radio" name="choice" value="1" /><span id="choice1"></span>
+        </label>
+        <label>
+          <input type="radio" name="choice" value="2" /><span id="choice2"></span>
+        </label>
+        <label>
+          <input type="radio" name="choice" value="3" /><span id="choice3"></span>
+        </label>
+        <label>
+          <input type="radio" name="choice" value="4" /><span id="choice4"></span>
+        </label>
+      </div>
+
+      <div class="next-div">
+        <button class="btn-next">Next</button>
+      </div>
+      <div class="help-div">
+        <button class="btn-help">Help</button>
+        <button class="btn-restart">Restart</button>
+      </div>
+      <div class="result-div">
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

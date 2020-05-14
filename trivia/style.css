@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+   
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(rgba(51, 48, 48, 0.4), rgba(161, 59, 59, 0.336)), url(world.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.92);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.title h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.question {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-start {
+    margin-top: 70px;
+}
+
+.btn-next {
+    margin-bottom: 10px;
+}
+
+.next-div button {
+    margin: 30px auto;
+    margin-top: 100px;
+}
+
+.help-div {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.choice label {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    width: 200px;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+
+.result-div {
+    margin-top: 100px;
+}
+
+.help {
+    margin-top: 10px;
+}
